@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Site</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id = "container"> <!-- container -->
+        <header> <!-- 해더 -->
+            <div id = "logo"> <!-- 로고 -->
+                <a href = "index.html">
+                    <h1>Make a Site</h1>
+                </a>
+            </div>
+            <nav> <!-- 내비게이션 -->
+                <ul id = "topMenu">
+                    <li><a href = "#">메인 메뉴 1<span>▼</span></a>
+                        <ul>
+                            <li><a href = "#">서브 메뉴1-1</a></li>
+                            <li><a href = "#">서브 메뉴1-2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href = "#">메인 메뉴 2<span>▼</span></a>
+                        <ul>
+                            <li><a href = "#">서브 메뉴2-1</a></li>
+                            <li><a href = "#">서브 메뉴2-2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href = "#">메인 메뉴 3</a></li>
+                    <li><a href = "#">메인 메뉴 4</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id = "slideShow"> <!-- 이미지 슬라이드 쇼 -->
+            <div id = "slides"> <!-- 이미지 관리 -->
+                <img src = "Images/cat-1.jfif" alt = "" width="100%" height="300">
+                <img src = "Images/cat-2.png" alt = "" width="100%" height="300">
+                <img src = "Images/cat-3.png" alt = "" width="100%" height="300">
+                <button id = "prev">&lang;</button>
+                <button id = "next">&rang;</button>
+
+            </div>
+        </div>
+        <div id = "contents"> <!-- 콘텐츠 -->
+            <div id = "tabMenu"> <!-- 탭 메뉴 -->
+                <input type = "radio" id = "tab1" name = "tabs" checked>
+                <label for="tab1">탭 메뉴1</label>
+                <input type = "radio" id = "tab2" name = "tabs">
+                <label for="tab2">탭 메뉴2</label>
+
+                <div id = "tabmenu1" class = "tabContent">
+                    <h2>탭 메뉴1 임의 내용</h2>
+                    <ul>
+                        <li>임의로 만든 내용 1</li>
+                        <li>임의로 만든 내용 2</li>
+                        <li>임의로 만든 내용 3</li>
+                        <li>임의로 만든 내용 4</li>
+                    </ul>
+                </div>
+                <div id = "tabmenu2" class = "tabContent">
+                    <h2>탭 메뉴2 임의 내용</h2>
+                    <ul>
+                        <li><img src="Images/cat-4.jpg" width="140" height="100"></li>
+                        <li><img src="Images/cat-5.jfif" width="140" height="100"></li>
+                        <li><img src="Images/cat-6.jfif" width="140" height="100"></li>
+                        <li><img src="Images/cat-7.jfif" width="140" height="100"></li>
+                        <li><img src="Images/cat-8.jpg" width="140" height="100"></li>
+                        <li><img src="Images/neko.jpg" width="140" height="100"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id = "link"> <!-- 퀵 링크 -->
+                <ul>
+                    <li>
+                        <a href = "#">
+                            <span id = "quick-icon1"></span>
+                            <p>퀵 링크-1</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <span id = "quick-icon2"></span>
+                            <p>퀵 링크-2</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <span id = "quick-icon3"></span>
+                            <p>퀵 링크-3</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <span id = "quick-icon4"></span>
+                            <p>퀵 링크-4</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer> <!-- 푸터 -->
+            <div id = "bottonMenu">
+                <ul>
+                    <li><a href = "#">푸터1</a></li>
+                    <li><a href = "#">푸터2</a></li>
+                    <li><a href = "#">푸터3</a></li>
+                    <li><a href = "#">푸터4</a></li>
+                </ul>
+                <div id = "sns">
+                <ul>
+                    <li><a href = "#"><img src = "Images/icon-1.jpg"></a></li>
+                    <li><a href = "#"><img src = "Images/icon-2.png"></a></li>
+                    <li><a href = "#"><img src = "Images/icon-3.png"></a></li>
+                </ul>
+            </div>
+            </div>
+            <div id = "information">
+                <p>나머지 정보를 모아둔 곳</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src = "javascript/slideshow.js"></script>
+</body>
+</html>
